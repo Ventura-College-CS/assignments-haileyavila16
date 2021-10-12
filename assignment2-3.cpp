@@ -50,5 +50,5 @@ int main()
     cout << "The numbers after sorting are: ";
     printNumbers(numbers);
     deleteNumbers(numbers);
-    return ;
+    return 0;
 }
