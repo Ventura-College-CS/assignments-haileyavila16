@@ -6,5 +6,15 @@ float scanNum(char cha)
 {
     int value;
     value = cha;
-    return 0; 
+    return float(value -'0');
+}
+int isOperator(char cha)
+{
+    if(cha == '+' || cha == '-' || cha == '*' || cha == '/' || cha == '^')
+        return 1;
+        return -1;
+}
+int isOperand(char cha)
+{
+    
 }
