@@ -57,3 +57,10 @@ float Evaluate(string postfix)
     }
     return post_stack.top();
 }
+
+int main()
+{
+    string post = "78+";
+    cout << "The postfix evaluation of " << post << " is " << Evaluate(post) << endl;
+    
+}
