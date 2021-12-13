@@ -14,7 +14,9 @@ int isOperator(char cha)
         return 1;
         return -1;
 }
-int isOperand(char cha)
+int isOperator(char cha)
 {
-    
+    if(cha >= '0' && cha <= '9')
+    retunr 1;
+    return -1;
 }
