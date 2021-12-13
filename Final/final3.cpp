@@ -32,4 +32,6 @@ float operation(int a, int b, char op)
         return b/a;
     else if(op == '^')
         return b^a;
+    else
+return INT_MIN;
 }
