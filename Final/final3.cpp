@@ -14,9 +14,22 @@ int isOperator(char cha)
         return 1;
         return -1;
 }
-int isOperator(char cha)
+int isOperand(char cha)
 {
     if(cha >= '0' && cha <= '9')
-    retunr 1;
+        return 1;
     return -1;
+}
+float operation(int a, int b, char op)
+{
+    if(op == '+')
+        return b+a;
+    else if(op == '-')
+        return b-a;
+    else if(op == '*')
+        return b*a;
+    else if(op == '/')
+        return b/a;
+    else if(op == '^')
+        return b^a;
 }
