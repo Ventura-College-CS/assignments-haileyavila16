@@ -35,3 +35,25 @@ float operation(int a, int b, char op)
     else
 return INT_MIN;
 }
+float Evaluate(string postfix)
+{
+    int a,b; 
+    stack<int> post_stack;
+    string::iterator it;
+    for(it=postfix.begin(); it!=postfix.end(); it++)
+    {
+        if(isOperator(*it) !=-1)
+        {
+            a=post_stack.top();
+            post_stack.pop();
+            b=post_stack.top();
+            post_stack.pop();
+            post_stack.push(operation(a, b, *it));
+        }
+        else if(isOperand(*it)>0)
+        {
+            post_stack.push(scanNum(*it));
+        }
+    }
+    return post_stack.top();
+}
