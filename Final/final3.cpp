@@ -58,9 +58,18 @@ float Evaluate(string postfix)
     return post_stack.top();
 }
 
+
 int main()
 {
     string post = "78+";
     cout << "The postfix evaluation of " << post << " is " << Evaluate(post) << endl;
-    
+    post = "23*2/";
+    cout << "The postfix evaluation of " << post << " is " << Evaluate(post) << endl;
+    post = "34+6*7/";
+    cout << "The postfix evaluation of " << post << " is " << Evaluate(post) << endl;
+    post = "12+34+-";
+    cout << "The postfix evaluation of " << post << " is " << Evaluate(post) << endl;
+
+    return 0;
 }
+
