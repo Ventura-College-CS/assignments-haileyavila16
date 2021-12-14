@@ -57,8 +57,6 @@ float Evaluate(string postfix)
     }
     return post_stack.top();
 }
-
-
 int main()
 {
     string post = "78+";
@@ -72,4 +70,3 @@ int main()
 
     return 0;
 }
-

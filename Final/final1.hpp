@@ -19,4 +19,5 @@ class Course
         void setName(const string &name);
         void setCredit(int credit);
         void print() const;
-}
+};
+#endif
