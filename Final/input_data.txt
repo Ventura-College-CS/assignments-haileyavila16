@@ -1,0 +1,10 @@
+1 Calculus 4
+2 CS 3
+3 Physics 4
+4 English 2
+5 Lab 1
+6 Chemistry 5
+7 Photography 5
+8 History 2
+9 Spanish 4
+10 Communications 2
